@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins&family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: rgb(245, 245, 238);
+}
+.navbar {
+  padding: 2vmin 5vmin;
+  width: 100%;
+  border-bottom: 2px solid rgb(154, 148, 148);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.505);
+  padding-bottom: 15px;
+  align-items: center;
+}
+#register-btn button {
+  border: 2px solid rgba(0, 0, 0, 0.505);
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.505);
+  padding: 5px ;
+  width: 13vmin;
+  user-select: none;
+}
+#register-btn> button:active{
+  transform: translate(3px, 3px); 
+  box-shadow: none;
+    
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+#logo img {
+  width: 9vw;
+}
+.logo-text {
+  font-size: 3.7vmin;
+  
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+.search > input {
+ 
+  font-size: 2vmin;
+  width: 30vw;
+  padding: 1.6vmin;
+  border-radius: 0px;
+  border: 3px solid rgba(0, 0, 0, 0.505);
+  
+}
+.search input:focus {
+  outline: none;
+}
+#home {
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.books-main {
+  display: flex;
+  flex-direction: column;
+  gap: 7vmin;
+  align-items: center;
+}
+.booksHeading{
+  font-size: 5vmin;
+ 
+  font-weight: 900;
+}
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 5vmin;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vmin;
+  padding: 3vmin;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgb(89, 84, 84);
+}
+.book > img {
+  width: 12vmax;
+  height: 15vmax;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px rgb(110, 110, 110);
+  border: 1px solid #333;
+}
+.book-title {
+  
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .books-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+/* form style */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 3vmin;
+  background: white;
+  /* border-radius: 20px; */
+  box-shadow: 7px 7px 1px 0px rgba(0, 0, 0, 0.505);
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vmin;
+  width: 100%;
+}
+
+form input {
+  background: rgba(134, 134, 134, 0.505);
+  padding: 1vmin;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(0, 0, 0);
+}
+.regBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subBtn{
+  width: 30vmin;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.505);
+}
+.subBtn:active{
+  transform: translate(3px, 3px); 
+  box-shadow: none;
+}
+
+
+
+
+
+.success {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 4vmin;
+  border-radius: 10px;
+  font-size: 4vmin;
+}
+
+.err {
+  font-size: 1.8vmin;
+  color: red;
+}
+
+legend {
+  background-color: rgba(0, 0, 0, 0.505);
+  box-shadow: 3px 3px 1px 0px rgba(110, 110, 110, 0.505);
+  color: white;
+  padding: 1vmin;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+fieldset {
+  border: 0;
+}
+
+.link{
+text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.successful {
+ text-align: center;
+ 
+}
+.successful>div{
+  font-size: 5vmin;
+}
+.successful>.buttons{
+  display: flex;
+  gap: 1.5vw;
+}
+.successful>.buttons button{
+  border: 2px solid rgba(0, 0, 0, 0.505);
+
+  padding: 5px;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.505);
+}
+
+
+.successful>.buttons button:active{
+  transform: translate(3px, 3px); 
+  box-shadow: none;
+}
